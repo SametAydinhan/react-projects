@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <h1>Champions</h1>
+      <h1>League Of Legends Champions</h1>
       <Champions/>
     </div>
   );
