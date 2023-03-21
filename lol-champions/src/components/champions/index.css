@@ -9,7 +9,7 @@
   }
   .foto {
     justify-content: center;
-    padding: 30px; 
+    margin: 30px 60px 50px 60px;
     transition: 0.3s ease-in-out;
     cursor: pointer;
   }
@@ -23,17 +23,18 @@
     height: 50px;
     margin: -54px 0 0 0;
     color: #fff;
-    background-color: #181529;
+    background-color: rgb(34, 34, 34);
     font-weight: 500;
     transition: 0.3s ease-in-out;
+    border-radius: 10px 10px 0 0;
   }
   .foto > img {
-    object-fit: cover;
+    object-fit: none;
+    width: 300px;
   }
   .foto:hover{
     scale: 1.1;
   } 
   .foto > .name:hover{
-    background-color: #fff;
-    color: #181529;
+    background-color: gray;
   }
