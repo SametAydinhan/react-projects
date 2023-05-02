@@ -19,5 +19,28 @@ export const WeatherProvider= (porps) => {
     const [current, setCurrent] = useState(null);
     const [daily,setDaily] = useState([]);
 
-
-}
+    const apiKey = import.meta.env.VİTE_API_KEY;
+    
+    useEffect(() => {
+        axios(
+            `https://api.openweathermap.org/data/2.5/onecall?lat=${city.latitude}&lon=${city.longitude}&exclude=hourly,minutely&units=metric&lang=tr&appid=${apiKey}`
+        ).then(({data}) =>{
+            setDaily(data.daily);
+        });
+    }, [city]);
+    
+    return(
+        <WeatherContext.Provider
+        value={{
+            city,
+            setCity,
+            current,
+            setCurrent,
+            daily,
+            setDaily
+        }}
+        >
+            {porps.children}
+        </WeatherContext.Provider>
+    );
+};
