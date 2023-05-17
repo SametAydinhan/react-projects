@@ -16,3 +16,7 @@ Usage
 ---
 
 `npm start`
+
+Teting Result
+---
+![image](https://github.com/SametAydinhan/react-projects/assets/93541408/9fc8a2dd-6fc7-444b-8bbb-d6898f60829a)
