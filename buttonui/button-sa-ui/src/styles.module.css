@@ -1,0 +1,114 @@
+/* add css module styles here (optional) */
+
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed&display=swap');
+ 
+.primary {
+  text-align: center;
+  border: none;
+  background-color: green;
+  color: whitesmoke;
+  padding: 0.5rem;
+  border-radius: 8px;
+  font-family: 'Sofia Sans Condensed', sans-serif;
+  font-size: 1.2rem;
+}
+
+.primary:hover {
+  transform: scale(1.02);
+}
+
+.primary:active {
+  transform: scale(0.98);
+}
+
+.default {
+  text-align: center;
+  border: 1px solid;
+  background-color: rgb(248, 247, 247);
+  color: #050505d7;
+  padding: 0.5rem;
+  border-radius: 8px;
+  font-family: 'Sofia Sans Condensed', sans-serif;
+  font-size: 1.2rem;
+}
+
+.default:hover {
+  transform: scale(1.02);
+  
+  border-color: green;
+  color: green;
+}
+
+.default:active {
+  transform: scale(0.98);
+}
+
+.dashed {
+  text-align: center;
+  border-style: dashed;
+  border-color: #292626;
+  background-color: rgb(248, 247, 247);
+  color: #050505d7;
+  padding: 0.5rem;
+  border-radius: 8px;
+  font-family: 'Sofia Sans Condensed', sans-serif;
+  font-size: 1.2rem;
+}
+
+.dashed:hover {
+  transform: scale(1.02);
+  border-color: green;
+  color: green;
+}
+
+.dashed:active {
+  transform: scale(0.98);
+}
+
+.text {
+  text-align: center;
+  border-style: none;
+  background-color: transparent;
+  color: #050505d7;
+  padding: 0.5rem;
+  border-radius: 8px;
+  font-family: 'Sofia Sans Condensed', sans-serif;
+  font-size: 1.2rem;
+}
+
+.text:hover {
+  background-color: rgb(248, 247, 247);
+
+  transform: scale(1.02);
+  color: green;
+}
+
+.text:active {
+  transform: scale(0.98);
+}
+
+.link {
+  text-align: center;
+  border-style: none;
+  background-color: transparent;
+  color: #082de8;
+  padding: 0.5rem;
+  border-radius: 8px;
+  font-family: 'Sofia Sans Condensed', sans-serif;
+  font-size: 1.2rem;
+}
+
+
+.link:hover {
+
+  opacity: 0.7;
+  transform: scale(1.02);
+
+}
+
+
+.link:active {
+
+  transform: scale(0.98);
+
+}
