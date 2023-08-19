@@ -1,9 +1,14 @@
 import Card from "../UI/Card";
 import ExpenseItem from "./ExpenseItem";
 import "./Expenses.css"
+import ExpensesFilter from "./ExpensesFilter";
 function Expenses(props) {
+    const filterExpensesHandler = (year) => {
+        console.log(year);
+    }
     return (
-        <Card className = "expenses">
+        <Card className="expenses">
+            <ExpensesFilter onFilterExpenses={filterExpensesHandler} />
             <ExpenseItem
                 title={props.expenses[0].title}
                 amount={props.expenses[0].amount}
