@@ -32,7 +32,7 @@ User.createIndexes();
 const express = require('express');
 const app = express();
 const cors = require("cors");
-console.log("App listen at port 5000");
+console.log("App listen at port " + process.env.PORT);
 app.use(express.json());
 app.use(cors());
 app.get("/", (req, resp) => {
@@ -68,4 +68,4 @@ app.get("/register" , async (req,resp) => {
     const _bulunanUser = await User.find()
     resp.send(_bulunanUser);
 })
-app.listen(3000);
+app.listen(process.env.PORT);
