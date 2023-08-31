@@ -14,7 +14,7 @@ let result = await fetch(
 
   
 
-console.log(new Date(result[0].date));
+
 const INITIAL_EXPENSES = result
 console.log(result);
 
