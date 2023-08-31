@@ -5,6 +5,11 @@ import ExpensesFilter from "./ExpensesFilter";
 import ExpensesList from "./ExpensesList";
 import ExpensesChart from "./ExpensesChart";
 function Expenses(props) {
+  for (let index = 0; index < props.expenses.length; index++) {
+    props.expenses[index].date =  new Date(props.expenses[index].date)
+   
+    
+  }
   const [filteredYear, setFilteredYear] = useState("2020");
   const filterExpensesHandler = (selectedYear) => {
     setFilteredYear(selectedYear);
