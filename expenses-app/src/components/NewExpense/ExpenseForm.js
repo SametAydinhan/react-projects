@@ -38,7 +38,7 @@ const ExpenseForm = (props) => {
     // })
   };
 
-  const submitHandler = (event) => {
+  const submitHandler =async (event)  => {
     event.preventDefault();
 
     const expenseData = {
@@ -46,6 +46,21 @@ const ExpenseForm = (props) => {
       amount: +enteredAmount,
       date: new Date(enteredDate),
     };
+
+    let result = await fetch(
+      'http://localhost:3000/register', {
+          method: "post",
+          body: JSON.stringify({expenseData}),
+          headers: {
+              'Content-Type': 'application/json'
+          }
+      })
+      result = await result.json();
+      console.warn(result);
+      if (result) {
+          alert("Data saved succesfully");
+       
+      }
 
     props.onSaveExpenseData(expenseData);
     setEnteredAmount('');
